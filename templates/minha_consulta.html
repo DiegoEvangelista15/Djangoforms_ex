@@ -1,0 +1,14 @@
+{% include 'base.html' %}
+{% block content %}
+    <section class="container mt-2">
+        <h2>Passagem</h2>
+        <p>Sua Origem: {{ form.origem.value }}</p>
+        <p>Seu Destino: {{ form.destino.value }}</p>
+        <p>Sua Data de Ida: {{ form.data_ida.value }}</p>
+        <p>Sua Data de Volta: {{ form.data_volta.value }}</p>
+        <p>Data de Pesquisa: {{ form.data_pesquisa.value }}</p>
+        <p>Classe da Viagem: {{ form.classe_viagem.value }}</p>
+        <p>Informacoes Adicionais: {{ form.informacoes.value }}</p>
+        <p>Email: {{ pessoa_form.email.value }}</p>
+    </section>
+{% endblock content %}
